@@ -1,16 +1,55 @@
-# catalog_food
+# Struktur folder
+```
+lib/
+│
+├── core/
+│   ├── router/ # untuk mengarahkan ke halaman halaman
+│   └── constants/ # untuk atur design atau text yang constants
+│
+├── features/ # untuk menampung fitur fitur
+│   └── cart/ # menampung fitur cart
+│       ├── data/ # implementasi kontrak
+│       ├── domain/ # membuat kontrak & entities
+│       └── presentation/ # menampilkan/membuat UI 
+│
+├── injection.dart # mengatur semua dependecy di satu tempat
+└── main.dart # file utama untuk run apk
+```
 
-A new Flutter project.
 
-## Getting Started
+### Flow
 
-This project is a starting point for a Flutter application.
+Ketika user klik + :
 
-A few resources to get you started if this is your first Flutter project:
+1. AddButton memanggil provider.addItem()
+2. Provider memanggil repository.addItem()
+3. notifyListeners() trigger
+4. UI nge rebuild otomatis
+5. Menu di Cart bertambah
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Langkah-Langkah Menjalankan:
+
+#### 1. **Clone atau Download Proyek**
+```bash
+git clone https://github.com/AbdulReyza/catalog_food.git
+cd catalog_food
+```
+
+#### 2. **Install Dependencies**
+```bash
+flutter pub get
+```
+
+#### 3. **Run Aplikasi di Emulator atau Device**
+```bash
+flutter run
+```
+
+
+# hasil
+
+<p align="center">
+  <img src="" width="300"/>
+  <img src="" width="300"/>
+</p>

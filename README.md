@@ -46,10 +46,9 @@ flutter pub get
 flutter run
 ```
 
-
 # hasil
 
 <p align="center">
-  <img src="" width="300"/>
-  <img src="" width="300"/>
+  <img src="https://github.com/user-attachments/assets/960a6c1f-4dc5-40e8-98f0-8b524638874c" width="300"/>
+  <img src="https://github.com/user-attachments/assets/4c7d54c2-f025-40b3-9b0d-94b017bd77d9" width="300"/>
 </p>

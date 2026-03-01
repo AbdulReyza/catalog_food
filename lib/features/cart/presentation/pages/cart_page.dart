@@ -11,7 +11,10 @@ class CartPage extends StatelessWidget {
     var cart = context.watch<CartProvider>();
 
     return Scaffold(
-      appBar: AppBar(title: const Text(AppConstant.cartTitle)),
+      appBar: AppBar(
+        title: const Text(AppConstant.cartTitle),
+        backgroundColor: Colors.red,
+      ),
       body: Column(
         children: [
           Expanded(
